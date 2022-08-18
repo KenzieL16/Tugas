@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+h2,
+h3,
+a {
+    color: #34495e;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+    color: #718daa;
+}
+
+.logo a:link {
+    color: #34495e;
+}
+
+.main-nav {
+    margin-top: 5px;
+
+}
+
+.main-nav a:link {
+    color: #718daa;
+}
+
+
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+
+}
+
+.main-nav a {
+    color: #34495e;
+    font-size: .99em;
+}
+
+.main-nav a:hover {
+    background-color: #b0cbe8;
+}
+
+
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+
+}
+
+.gambar1 {
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+
+}
+
+.teks1 {
+    float: right;
+    margin-left: 40%;
+    margin-top: -25%;
+    margin-right: 20px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+
+        /*.header {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        } */
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+/*Card*/
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Quicksand&display=swap');
+
+* {
+    transition: all .7s ease;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+body {
+    background: #cecece;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Barriecito', cursive;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-top: -20px;
+}
+
+.wrapper {
+    border-radius: 5px;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    margin: 0 100px;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px #999;
+}
+
+.pic {
+    height: 180px;
+    background: url('xiaomi-11t.jpeg') no-repeat;
+    background-size: 400px;
+    background-position: center;
+    padding: 0 0 20px 0;
+    margin-bottom: 35px;
+}
+
+.wrapper:hover .pic,
+.wrapper:focus .pic {
+    transform: scale(1.2);
+}
+
+p.header {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.content {
+    padding: 0 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+a .readmore {
+    height: 40px;
+    width: 100px;
+    float: right;
+    padding-left: 10px;
+    line-height: 40px;
+    background-color: #61deec;
+    margin: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+a .readmore:hover {
+    background-color: #73b0de;
+}
+
+a .readmore i {
+    color: #fff;
+    margin-left: 5px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+a .readmore:hover i {
+    margin: 0 0 0 20px;
+}
+
+
+
+.button-center {
+    background-color: #61deec;
+    margin-top: 20px;
+}
+
+a .leesmeer {
+    height: 40px;
+    width: 110px;
+    padding-left: 10px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+a .button-center:hover {
+    background-color: #73b0de;
+}
+
+a .button-center i {
+    color: #fff;
+    margin-left: 5px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+a .button-center:hover i {
+    margin: 0 0 0 20px;
+}
