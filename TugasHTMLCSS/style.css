@@ -228,14 +228,50 @@ a .readmore:hover i {
     margin: 0 0 0 20px;
 }
 
-
-
 .button-center {
+    height: 40px;
+    width: 100px;
+    float: right;
+    padding-left: 10px;
+    line-height: 40px;
     background-color: #61deec;
-    margin-top: 20px;
+    margin: 20px;
+    font-size: 12px;
+    border-radius: 5px;
 }
 
-a .leesmeer {
+a.leesmeer {
+    height: 40px;
+    width: 100px;
+    float: right;
+    padding-left: 10px;
+    line-height: 40px;
+    background-color: #61deec;
+    margin: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+a .button-center:hover {
+    background-color: #73b0de;
+}
+
+a .button-center i {
+    color: #fff;
+    margin-left: 5px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+a .button-center:hover i {
+    margin: 0 0 0 20px;
+}
+
+/*.button-center {
+    background-color: #61deec;
+    margin-top: 20px;
+}*/
+
+/*a .leesmeer {
     height: 40px;
     width: 110px;
     padding-left: 10px;
@@ -243,9 +279,9 @@ a .leesmeer {
     margin: 0 auto;
     font-size: 15px;
     border-radius: 5px;
-}
+}*/
 
-a .button-center:hover {
+/*a .button-center:hover {
     background-color: #73b0de;
 }
 
