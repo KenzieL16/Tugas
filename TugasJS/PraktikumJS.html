@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1</title>
+</head>
+<script language="JavaScript">
+    function test() {
+        var nilai = document.kirim.T1.value
+
+        if (nilai > 100)
+            document.kirim.T2.value = "Nilai Tidak Valid"
+        else if (nilai >= 93)
+            document.kirim.T2.value = "Predikat : A"
+        else if (nilai >= 83)
+            document.kirim.T2.value = "Predikat : B"
+        else if (nilai >= 75)
+            document.kirim.T2.value = "Predikat : C"
+        else if (nilai >= 50)
+            document.kirim.T2.value = "Predikat : D"
+        else if (nilai >= 0)
+            document.kirim.T2.value = "Predikat : E"
+        else
+            document.kirim.T2.value = "Nilai Tidak Valid"
+
+    }
+</script>
+
+<body>
+    <form method="Post" name="kirim">
+        <p>Masukkan Nilai :</p>
+        <input type="text" name="T1"><br>
+        <input type="button" value="Convert" name="B1" onclick="test()"><br>
+        <p>Hasil</p>
+        <input type="text" name="T2">
+    </form>
+</body>
+
+</html>

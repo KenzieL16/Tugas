@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2</title>
+</head>
+<script language="JavaScript">
+    function penjumlahan() {
+        var a = parseFloat(document.calculator.a1.value);
+        var b = parseFloat(document.calculator.a2.value);
+        var hasil = a + b;
+        document.calculator.hasil.value = hasil;
+    }
+    function pengurangan() {
+        var a = parseFloat(document.calculator.a1.value);
+        var b = parseFloat(document.calculator.a2.value);
+        var hasil = a - b;
+        document.calculator.hasil.value = hasil;
+    }
+    function perkalian() {
+        var a = parseFloat(document.calculator.a1.value);
+        var b = parseFloat(document.calculator.a2.value);
+        var hasil = a * b;
+        document.calculator.hasil.value = hasil;
+    }
+    function pembagian() {
+        var a = parseFloat(document.calculator.a1.value);
+        var b = parseFloat(document.calculator.a2.value);
+        var hasil = a / b;
+        document.calculator.hasil.value = hasil;
+    }
+
+</script>
+
+<body>
+
+    <form name="calculator">
+        <p>Masukkan Nilai A:</p>
+        <input type="number" name="a1" value=""><br>
+        <p>Masukkan Nilai B:</p>
+        <input type="number" name="a2" value=""><br>
+        <p>Hasil</p>
+        <input type="number" name="hasil" value=""><br><br>
+        <input class="tombol" type="button" value="+" name="B1" onclick="penjumlahan()">
+        <input class="tombol" type="button" value="-" name="B1" onclick="pengurangan()">
+        <input class="tombol" type="button" value="X" name="B1" onclick="perkalian()">
+        <input class="tombol" type="button" value="/" name="B1" onclick="pembagian()">
+    </form>
+
+</body>
+
+</html>
